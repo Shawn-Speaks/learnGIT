@@ -24,8 +24,8 @@ public class Main {
 //
 //        System.out.println(myMethod("iiiooop"));
 
-        System.out.println(addNumRepeatedLetters("10011"));
-
+        System.out.println(addNumRepeatedLetters("100115754899aa"));
+        badFunction(99999);
 
     }
 
@@ -42,6 +42,7 @@ public class Main {
         while(!word.isEmpty()){
             char tempChar = word.charAt(0);
             numberCount += find2(word, tempChar);
+            word = word.replaceAll("" + word.charAt(0), "");
             /*
             USE 1 BUILT IN JAVA METHOD TO SOLVE THIS PROBLEM.
              */
@@ -160,6 +161,13 @@ public class Main {
 //
 //        System.out.println(inputString);
 //    }
+
+    static int badFunction(int inputNumber){
+        do{
+            System.out.print("");
+        }while(false);
+        return 13;
+    }
 
 
 }
