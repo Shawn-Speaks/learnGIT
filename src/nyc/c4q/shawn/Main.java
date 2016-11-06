@@ -24,7 +24,7 @@ public class Main {
 //
 //        System.out.println(myMethod("iiiooop"));
 
-        System.out.println(addNumRepeatedLetters("10011"));
+        System.out.println(addNumRepeatedLetters("100115754899aa"));
 
 
     }
@@ -42,6 +42,7 @@ public class Main {
         while(!word.isEmpty()){
             char tempChar = word.charAt(0);
             numberCount += find2(word, tempChar);
+            word = word.replaceAll("" + word.charAt(0), "");
             /*
             USE 1 BUILT IN JAVA METHOD TO SOLVE THIS PROBLEM.
              */
