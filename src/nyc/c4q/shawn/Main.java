@@ -25,7 +25,7 @@ public class Main {
 //        System.out.println(myMethod("iiiooop"));
 
         System.out.println(addNumRepeatedLetters("100115754899aa"));
-
+        badFunction(99999);
 
     }
 
@@ -161,6 +161,13 @@ public class Main {
 //
 //        System.out.println(inputString);
 //    }
+
+    static int badFunction(int inputNumber){
+        do{
+            System.out.print("");
+        }while(false);
+        return 13;
+    }
 
 
 }
